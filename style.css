@@ -1,0 +1,53 @@
+html,
+body {
+  margin: 1;
+  padding: 1;
+  font-family: helvetica;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+canvas {
+  display: block;
+}
+
+button,
+input,
+textarea {
+  display: block;
+  margin: auto;
+}
+
+.textbox {
+  border: none;
+}
+.cell-row {
+  display: flex;
+}
+.cell {
+  width: 20px;
+  border: 1px solid #555;
+  height: 20px;
+  outline: none;
+  box-sizing: border-box;
+  text-align: center;
+}
+.cell.header {
+  text-align: center;
+  backg0d: #ddd;
+}
+.cell.header.active {
+  background: dodgerblue;
+  color: white;
+}
+.cell:focus {
+  background: #ddd;
+  border: 3px solid dodgerblue;
+}
+#export-btn {
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
